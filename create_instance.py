@@ -3,7 +3,8 @@ import boto3
 REGION_NAME = "us-east-1"
 
 AMI = "ami-06ae0e97bcb59038c" # Ubuntu 18.04 LTS
-KEY_NAME = aws_key
+aws_access_key_id = 'YOUR_ACCESS_KEY'
+aws_secret_access_key = 'YOUR_SECRET_KEY'
 
 def create_instances(instance_type: str, count: int):
     instance_params = {
