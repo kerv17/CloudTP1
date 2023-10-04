@@ -44,6 +44,9 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+  access_key = "ASIAXW6VCEQF2OMLYVUV"
+  secret_key = "Z6ylm4JWgtu5D+suHic0zEJFTJ5V42BZOGWYIpfr"
+  token = "FwoGZXIvYXdzEEEaDOBJf1+NOL3nm4AqKSLMAa2J+whiAjFqinENIATFEXq6EEYL9ePyqy2GJ1xW3aountiMVeXjMyj9zhMMTLEuFkgA/Gv7eHnAtGu3oHEmAZIVXYtUCz/BAYEh2G+q83vRUbUGRd7BsbJV0A0GdbnNB7l1drvrBQhWJO7UXFAh7nfHOT/pz4jaF+Jpqh2T9lOsO6DT6v7Mle9TnOOSEmu6N7wJ8g7QxQ39S1rcgsPG4rb/LNErpVHBhIMHV99tEH8EOEUyOwCHWk0/RGuxL/t1jOlFIu7x4iX/zdAt2Sjs1PKoBjIt7p9wt60nYMc1ER5K4+ZDN1ZacZp0BezUMP7fhA8Lyn8vnz9DI8Zj8u2F+CpX"
 }
 
 resource "aws_security_group" "security_gp" {
