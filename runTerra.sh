@@ -1,13 +1,13 @@
 ################################
-# Setup AWS CLI
+#Setup AWS CLI
 ################################
 
-export AWS_ACCESS_KEY_ID="ASIAXW6VCEQFR6EIRH6K"
-export AWS_SECRET_ACCESS_KEY="QzBk8F4rgxRnd3289GaRc3BN7SaEocEQKMXIro8r"
-export AWS_SESSION_TOKEN="FwoGZXIvYXdzEHAaDGSw2CessGzXvffKGCLMATRqHn3cHVPFjQe5ZX+TVhK2O8MbNEaciddguAceC3SxMzp4S4fB0I6dZQXqqaDwuETa6q0BaYNIpxqb/HGT5VOpf7qX5QCGL4ydgDsZwkgc06DdR1dqVeHPDayXwqWiwPaumCIbRYxhPVOD1pzzC5GaV0yqneR68c6rRxMt8klxUAN3cUF5kk1MNbHQKgRbeTpG1UvY+Mlzhf3K49qbSyl/MwCz74FwKQCSraszhbeM35YbLGm+i2BBckUBTtFr2s03GwAWLnxfegkTlyim/PyoBjItdRHrHKr4gTfqXVG7aHYHN9xB/LaiMEFqHrH4WcAtfmmQSa6SH0km8qClY2AP"
+export AWS_ACCESS_KEY_ID="$1"
+export AWS_SECRET_ACCESS_KEY="$2"
+export AWS_SESSION_TOKEN="$3"
 
 ################################
-# Terraform Infra
+#Terraform Infra
 ################################
 echo "Terraforming Infra..."
 
@@ -28,7 +28,7 @@ cd ..
 echo "Terraforming completed!"
 
 ################################
-# Requests
+#Requests
 ################################
 
 docker pull kerv17/terra-requests:latest
