@@ -42,26 +42,11 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
-variable "access_key" {
-  description = "Access key"
-  type        = string # Replace with the appropriate data type if it's not a string
-}
-
-variable "secret_key" {
-  description = "Secret key"
-  type        = string # Replace with the appropriate data type if it's not a string
-}
-
-variable "token" {
-  description = "token"
-  type        = string # Replace with the appropriate data type if it's not a string
-}
-
 provider "aws" {
   region = var.aws_region
-  access_key = "ASIAXW6VCEQFR6EIRH6K"
-  secret_key = "QzBk8F4rgxRnd3289GaRc3BN7SaEocEQKMXIro8r"
-  token = "FwoGZXIvYXdzEHAaDGSw2CessGzXvffKGCLMATRqHn3cHVPFjQe5ZX+TVhK2O8MbNEaciddguAceC3SxMzp4S4fB0I6dZQXqqaDwuETa6q0BaYNIpxqb/HGT5VOpf7qX5QCGL4ydgDsZwkgc06DdR1dqVeHPDayXwqWiwPaumCIbRYxhPVOD1pzzC5GaV0yqneR68c6rRxMt8klxUAN3cUF5kk1MNbHQKgRbeTpG1UvY+Mlzhf3K49qbSyl/MwCz74FwKQCSraszhbeM35YbLGm+i2BBckUBTtFr2s03GwAWLnxfegkTlyim/PyoBjItdRHrHKr4gTfqXVG7aHYHN9xB/LaiMEFqHrH4WcAtfmmQSa6SH0km8qClY2AP"
+  access_key = "ASIAUQFBL7TZHFCOZK7H"
+  secret_key = "/R/WqLb3MYBZwxDrD94kr9hWoSU5My6GXlt+sU1r"
+  token = "FwoGZXIvYXdzEHAaDDu/qwIJm37dOxqCqyLGAVBz12sRkpSEY4y7JRCS544ikSyJWUeANB98Ms28ObT6z31Vq5UWgVWQw8KHwEjI4eYSpwGWFQlVAu66RMfskQ2K41/pR1GQPBv+hfTswix5am+pwq9oSItThU6yYO6XVgJGYc0tuUvDbxpErF6D6JIN6vCE7qLOQhH/T9lYTDf3vOc+ocjfyRDH7P7gmgJSWd6wRMO6mYY6Z2H3+mo5yjGSX2G8rRAWwNdh75eQsDCcb6up3NUsdtXq5eEl76VtdbqZU8Ux9SiLgf2oBjItOVIrsl9sPyScXiFwB628165LaGwGcTQg3SzfocxwYQEQSP5E0DDqNfW91FRz"
 }
 
 resource "aws_security_group" "security_gp" {
