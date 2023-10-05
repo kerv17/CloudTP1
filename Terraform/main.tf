@@ -44,7 +44,7 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
-  access_key = "ASIAXW6VCEQF2OMLYVUV"
+  access_key = "ASIAXW6VCEQFR6EIRH6K"
   secret_key = "QzBk8F4rgxRnd3289GaRc3BN7SaEocEQKMXIro8r"
   token = "FwoGZXIvYXdzEHAaDGSw2CessGzXvffKGCLMATRqHn3cHVPFjQe5ZX+TVhK2O8MbNEaciddguAceC3SxMzp4S4fB0I6dZQXqqaDwuETa6q0BaYNIpxqb/HGT5VOpf7qX5QCGL4ydgDsZwkgc06DdR1dqVeHPDayXwqWiwPaumCIbRYxhPVOD1pzzC5GaV0yqneR68c6rRxMt8klxUAN3cUF5kk1MNbHQKgRbeTpG1UvY+Mlzhf3K49qbSyl/MwCz74FwKQCSraszhbeM35YbLGm+i2BBckUBTtFr2s03GwAWLnxfegkTlyim/PyoBjItdRHrHKr4gTfqXVG7aHYHN9xB/LaiMEFqHrH4WcAtfmmQSa6SH0km8qClY2AP"
 }
