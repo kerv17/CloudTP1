@@ -42,6 +42,21 @@ terraform {
   required_version = ">= 1.2.0"
 }
 
+variable "access_key" {
+  description = "Access key"
+  type        = string # Replace with the appropriate data type if it's not a string
+}
+
+variable "secret_key" {
+  description = "Secret key"
+  type        = string # Replace with the appropriate data type if it's not a string
+}
+
+variable "token" {
+  description = "token"
+  type        = string # Replace with the appropriate data type if it's not a string
+}
+
 provider "aws" {
   region = var.aws_region
   access_key = "ASIAXW6VCEQFR6EIRH6K"
