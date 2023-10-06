@@ -46,7 +46,7 @@ echo "Requests completed"
 ################################
 
 cd Terraform
-terraform destroy -auto-approve
+#terraform destroy -auto-approve
 cd ..
 
 unset TF_VAR_access_key
