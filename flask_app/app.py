@@ -16,4 +16,4 @@ def get_instance_id():
         return "UNKNOWN"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=80)
