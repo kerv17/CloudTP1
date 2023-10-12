@@ -28,7 +28,7 @@ export load_balancer=$(terraform output --raw load_balancer_arn_suffix)
 export cluster1=$(terraform output --raw M4_group_arn_suffix)
 export cluster2=$(terraform output --raw T2_group_arn_suffix)
 cd ..
-cd ..
+
 
 echo "Terraforming completed!"
 
@@ -62,3 +62,4 @@ unset TF_VAR_secret_key
 unset TF_VAR_token
 
 echo "DONE!"
+cd ..
