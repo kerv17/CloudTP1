@@ -1,3 +1,7 @@
+echo "Getting files"
+git clone "https://github.com/kerv17/CloudTP1.git"
+cd CloudTP1
+
 ################################
 # Setup AWS CLI
 ################################
@@ -9,14 +13,12 @@ export TF_VAR_access_key="$ACCESS_KEY"
 export TF_VAR_secret_key="$SECRET_KEY"
 export TF_VAR_token="$TOKEN"
 
+
 ################################
 # Terraform Infra
 ################################
 echo "Terraforming Infra..."
 
-#git clone "https://github.com/kerv17/CloudTP1.git"
-
-#cd CloudTP1
 cd Terraform
 terraform init
 terraform apply -auto-approve
@@ -26,7 +28,7 @@ export load_balancer=$(terraform output --raw load_balancer_arn_suffix)
 export cluster1=$(terraform output --raw M4_group_arn_suffix)
 export cluster2=$(terraform output --raw T2_group_arn_suffix)
 cd ..
-#cd ..
+cd ..
 
 echo "Terraforming completed!"
 
@@ -38,7 +40,7 @@ docker pull kerv17/terra-requests:latest
 sleep 1m
 echo "Launching requests"
 docker run -e url="$url" kerv17/terra-requests:latest
-echo "Requests completed"
+echo "Requests completed!"
 
 ################################
 # Benchmarking
@@ -54,7 +56,9 @@ docker run -e load_balancer="$load_balancer" -e cluster1="$cluster1" -e cluster2
 ################################
 # Clean
 ################################
-
+echo "Removing keys from global variables"
 unset TF_VAR_access_key
 unset TF_VAR_secret_key
 unset TF_VAR_token
+
+echo "DONE!"
