@@ -35,7 +35,7 @@ echo "Terraforming completed!"
 ################################
 
 docker pull kerv17/terra-requests:latest
-
+sleep 1m
 echo "Launching requests"
 docker run -e url="$url" kerv17/terra-requests:latest
 echo "Requests completed"
@@ -44,7 +44,9 @@ echo "Requests completed"
 # Benchmarking
 ########################
 ########
+
 docker pull kerv17/benchmark:latest
+sleep 3m
 echo "Launching benchmark"
 docker run -e load_balancer="$load_balancer" -e cluster1="$cluster1" -e cluster2="$cluster2" -e ACCESS_KEY="$ACCESS_KEY" -e SECRET_KEY="$SECRET_KEY" -e TOKEN="$TOKEN" kerv17/benchmark:latest
 
